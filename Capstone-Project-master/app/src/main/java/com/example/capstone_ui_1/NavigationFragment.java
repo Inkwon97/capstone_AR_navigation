@@ -127,7 +127,7 @@ public class NavigationFragment extends Fragment implements OnMapReadyCallback, 
                 NavigationFragment.this.mapboxMap = mapboxMap;
                 mapboxMap.addOnMapClickListener(NavigationFragment.this);
                 // mapbox://styles/gouz7514/cke8d56tw4y5v19jv8ecm5l7v
-                mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/ghkdrnjs/cl2g3d9fg000h15moh10qyf7n"), new Style.OnStyleLoaded() {
+                mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/ghkdrnjs/cl2a8g8sp000f15nxte65nfvx"), new Style.OnStyleLoaded() {
                     @Override
                     public void onStyleLoaded(@NonNull Style style) {
                         enableLocationComponent(style);
@@ -198,7 +198,13 @@ public class NavigationFragment extends Fragment implements OnMapReadyCallback, 
                     public void onClick(View v) {
                         // 각 구역별 좌표 저장
                         // 공대, 인문대, 기숙사, 예체대
-                        double[][] latlngs = {{37.320754, 127.126254}, {37.322298, 127.129150}, {37.315870, 127.126907}, {37.319199, 127.129730}};
+                        // 신공학관 37.558018, 126.998327
+                        // 인문대 37.557723, 127.001901
+                        // 남산학사 37.558424, 126.998025
+                        // 예체대 37.557982, 127.003341
+//                        단국대
+//                        double[][] latlngs = {{37.320754, 127.126254}, {37.322298, 127.129150}, {37.315870, 127.126907}, {37.319199, 127.129730}};
+                        double[][] latlngs = {{37.558018, 126.998327}, {37.557723, 127.001901}, {37.558424, 126.998025}, {37.557982, 127.003341}};
                         CameraPosition position0 = new CameraPosition.Builder()
                                 .target(new LatLng(latlngs[0][0], latlngs[0][1]))
                                 .zoom(17)
