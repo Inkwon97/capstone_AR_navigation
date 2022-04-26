@@ -28,7 +28,8 @@ allprojects {
             credentials {
                 username = 'mapbox'
                 // Use the secret token you stored in gradle.properties as the password
-                password = project.properties['MAPBOX_DOWNLOADS_TOKEN'] ?: "sk.eyJ1IjoiZ291ejc1MTQiLCJhIjoiY2tnZDl2NXN0MGhseTJ6bnYwM3p2bDljZiJ9.9a169OyecCl3uW2yK2pvrQ"
+//                password = project.properties['MAPBOX_DOWNLOADS_TOKEN'] ?: "sk.eyJ1IjoiZ291ejc1MTQiLCJhIjoiY2tnZDl2NXN0MGhseTJ6bnYwM3p2bDljZiJ9.9a169OyecCl3uW2yK2pvrQ"
+                password = project.properties['MAPBOX_DOWNLOADS_TOKEN'] ?: "sk.eyJ1IjoiZ2hrZHJuanMiLCJhIjoiY2wyZzN5ZHB3MDA3dTNlbXc4bmRyM3M4ZSJ9.9_UNhtJBXcF7W41BkAJ-Mw"
             }
         }
     }
