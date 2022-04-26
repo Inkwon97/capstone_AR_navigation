@@ -125,7 +125,7 @@ public class NavigationFragment extends Fragment implements OnMapReadyCallback, 
             @Override
             public void onMapReady(@NonNull MapboxMap mapboxMap) { ;
                 NavigationFragment.this.mapboxMap = mapboxMap;
-                mapboxMap.addOnMapClickListener(NavigationFragment.this);ㅁㄴㄹㅇ
+                mapboxMap.addOnMapClickListener(NavigationFragment.this);
                 // mapbox://styles/gouz7514/cke8d56tw4y5v19jv8ecm5l7v
                 mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/ghkdrnjs/cl2a8g8sp000f15nxte65nfvx"), new Style.OnStyleLoaded() {
                     @Override
