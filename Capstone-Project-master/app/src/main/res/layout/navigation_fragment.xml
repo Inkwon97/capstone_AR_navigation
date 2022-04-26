@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        mapbox:mapbox_cameraTargetLat="37.321643"
+        mapbox:mapbox_cameraTargetLng="127.126756"
+        mapbox:mapbox_cameraZoom="16">
+
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <Button
+        android:id="@+id/btnArea"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/mapboxBlue"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="@string/btnArea"
+        android:fontFamily="@font/ssangmun"
+        android:textColor="@color/mapboxWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btnDKU"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnDKU"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/mapboxBlue"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="@string/btnDKU"
+        android:fontFamily="@font/ssangmun"
+        android:textColor="@color/mapboxWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btnMyLoc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMyLoc"
+        android:layout_width="78dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/mapboxBlue"
+        android:text="@string/btnMyLoc"
+        android:fontFamily="@font/ssangmun"
+        android:textColor="@color/mapboxWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartNavigation"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/mapboxGrayLight"
+        android:enabled="false"
+        android:text="@string/btnStartNavigation"
+        android:fontFamily="@font/ssangmun"
+        android:textColor="@color/mapboxWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/mapView"
+        app:layout_constraintVertical_bias="0.9"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStartAR"
+        android:layout_width="180dp"
+        android:layout_height="43dp"
+        android:background="@color/mapboxGrayLight"
+        android:enabled="false"
+        android:text="@string/btnStartAR"
+        android:fontFamily="@font/ssangmun"
+        android:textColor="@color/mapboxWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/mapView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toEndOf="@+id/btnStartNavigation"
+        app:layout_constraintVertical_bias="0.9"
+        mapbox:layout_constraintStart_toStartOf="parent"
+        mapbox:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
