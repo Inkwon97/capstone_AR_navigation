@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">알단지</string>
+    <string name="app_name">동국대길찾기</string>
 <!--    <string name="mapbox_access_token">pk.eyJ1IjoiZ291ejc1MTQiLCJhIjoiY2thbzFxOTg0MTU1ejJ4bG85dm1zbTg3biJ9.jAXS_jXPQusNugc_430LfA</string>-->
-    <string name="mapbox_access_token">pk.eyJ1IjoiZ2hrZHJuanMiLCJhIjoiY2wxb3JncDUxMG8wNDNkbWpuZ2M2eWZxcyJ9.cj-iMnF0GyZwNMQX21jx7w</string>
+<!--    <string name="mapbox_access_token">pk.eyJ1IjoiZ2hrZHJuanMiLCJhIjoiY2wxb3JncDUxMG8wNDNkbWpuZ2M2eWZxcyJ9.cj-iMnF0GyZwNMQX21jx7w</string> -->
+    <string name="mapbox_access_token">pk.eyJ1IjoieWJpbjEiLCJhIjoiY2wwd2kwazJiMDA5eTNqbWQ2YjgzcGhzcyJ9.N6n_2XY1FXpm3erEbzdnkw</string>
+
     <string name="btnDKU">동국대 지도</string>
     <string name="btnMyLoc">내 위치</string>
     <string name="btnStartNavigation">길 안내 시작</string>

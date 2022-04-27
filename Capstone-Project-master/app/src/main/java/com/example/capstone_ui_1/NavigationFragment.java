@@ -204,28 +204,28 @@ public class NavigationFragment extends Fragment implements OnMapReadyCallback, 
                         // 예체대 37.557982, 127.003341
 //                        단국대
 //                        double[][] latlngs = {{37.320754, 127.126254}, {37.322298, 127.129150}, {37.315870, 127.126907}, {37.319199, 127.129730}};
-                        double[][] latlngs = {{37.558018, 126.998327}, {37.557723, 127.001901}, {37.558424, 126.998025}, {37.557982, 127.003341}};
+                        double[][] latlngs = {{37.558018, 126.998327}, {37.5585639, 126.9989122}, {37.5595638, 126.9985511}, {37.5569808, 126.9996621}};
                         CameraPosition position0 = new CameraPosition.Builder()
                                 .target(new LatLng(latlngs[0][0], latlngs[0][1]))
-                                .zoom(17)
+                                .zoom(19)
                                 .bearing(200)
                                 .tilt(0)
                                 .build();
                         CameraPosition position1 = new CameraPosition.Builder()
                                 .target(new LatLng(latlngs[1][0], latlngs[1][1]))
-                                .zoom(17)
+                                .zoom(19)
                                 .bearing(200)
                                 .tilt(0)
                                 .build();
                         CameraPosition position2 = new CameraPosition.Builder()
                                 .target(new LatLng(latlngs[2][0], latlngs[2][1]))
-                                .zoom(17)
+                                .zoom(19)
                                 .bearing(200)
                                 .tilt(0)
                                 .build();
                         CameraPosition position3 = new CameraPosition.Builder()
                                 .target(new LatLng(latlngs[3][0], latlngs[3][1]))
-                                .zoom(16)
+                                .zoom(19)
                                 .bearing(200)
                                 .tilt(0)
                                 .build();
@@ -233,7 +233,7 @@ public class NavigationFragment extends Fragment implements OnMapReadyCallback, 
 
                         AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity());
                         dialog.setTitle("어디로 가시나요?")
-                                .setItems(new CharSequence[]{"공대", "인문대", "기숙사", "예체대"}, new DialogInterface.OnClickListener() {
+                                .setItems(new CharSequence[]{"신공학관", "원흥관", "정보문화관","상록원"}, new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
 
