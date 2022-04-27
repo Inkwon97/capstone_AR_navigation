@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.os.Process;
+import android.widget.Button;
+import android.widget.FrameLayout;
 
 import com.unity3d.player.IUnityPlayerLifecycleEvents;
 import com.unity3d.player.UnityPlayer;
@@ -44,6 +46,26 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         mUnityPlayer = new UnityPlayer(this, this);
         setContentView(mUnityPlayer);
         mUnityPlayer.requestFocus();
+        addControlsToUnityQuit();
+    }
+
+    private void addControlsToUnityQuit() {
+        FrameLayout layout = mUnityPlayer;
+        {
+            Button myButton = new Button(this);
+            myButton.setText("Finish");
+            myButton.setX(100);
+            myButton.setY(100);
+
+            myButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    finish();
+                    Intent intent = new Intent(v.getContext(), MainActivity.class);
+                    startActivity(intent);
+                }
+            });
+            layout.addView(myButton, 300, 200);
+        }
     }
 
     // When Unity player unloaded move task to background
