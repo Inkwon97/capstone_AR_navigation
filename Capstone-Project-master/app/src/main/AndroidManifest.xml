@@ -17,13 +17,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".SearchApplication"
+        >
+
 
         <service android:name=".Service.MyService">
             <intent-filter>
                 <action android:name="com.example.capstone_ui_1.MyService"/>
             </intent-filter>
         </service>
+        <activity android:name=".KMainActivity" />
 
         <activity android:name=".Service.ModifyActivity"
             android:windowSoftInputMode="stateHidden"/>
@@ -37,7 +41,6 @@
         <activity android:name=".Service.FindClassActivity" />
         <activity android:name=".Service.ClassActivity" />
         <activity android:name=".Service.SelectingActivity" />
-
 
         <activity android:name=".MainActivity">
             <intent-filter>

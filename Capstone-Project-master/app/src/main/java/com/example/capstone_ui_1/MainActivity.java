@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.bottom_navi_alarm: {
-                        Intent Select = new Intent(MainActivity.this, SelectingActivity.class);
+                        Intent Select = new Intent(MainActivity.this, KMainActivity.class);
                         startActivity(Select);
                         break;
                     }
