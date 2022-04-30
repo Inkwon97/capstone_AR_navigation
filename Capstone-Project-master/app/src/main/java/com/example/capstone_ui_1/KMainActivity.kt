@@ -17,7 +17,7 @@ class KMainActivity : AppCompatActivity() {
 
         val searchBottomSheetView = findViewById<SearchBottomSheetView>(R.id.search_view)
         searchBottomSheetView.initializeSearch(savedInstanceState, SearchBottomSheetView.Configuration())
-
+        searchBottomSheetView.expand();
         if (!isPermissionGranted(Manifest.permission.ACCESS_FINE_LOCATION)) {
             ActivityCompat.requestPermissions(
                     this,
@@ -25,6 +25,7 @@ class KMainActivity : AppCompatActivity() {
                     PERMISSIONS_REQUEST_LOCATION
             )
         }
+
     }
 
     private companion object {
