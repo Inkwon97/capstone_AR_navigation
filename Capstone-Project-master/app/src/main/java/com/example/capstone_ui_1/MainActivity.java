@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         backPressCloseHandler = new BackPressCloseHandler(this);
 
         mBottomNavigationView();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_frameLayout, navigationFragment).commitAllowingStateLoss();
 
     }
 
@@ -62,11 +63,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.bottom_navi_home: {
+                    /*case R.id.bottom_navi_home: {
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_frameLayout, homeFragment).commitAllowingStateLoss();
                         break;
-                    }
-                    case R.id.bottom_navi_class: {
+                    }*/
+                    /*case R.id.bottom_navi_class: {
                         Intent Class = new Intent(MainActivity.this, ClassActivity.class);
                         startActivity(Class);
                         break;
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent Select = new Intent(MainActivity.this, SelectingActivity.class);
                         startActivity(Select);
                         break;
-                    }
+                    }*/
                     case R.id.bottom_navi_search: {
                         Intent Select = new Intent(MainActivity.this, KMainActivity.class);
                         startActivity(Select);
