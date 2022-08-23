@@ -19,8 +19,12 @@
 5. [로딩 기능 구현](https://youtube.com/shorts/5guxake4DbU?feature=share)  
 
 ##### 시연
-1. [안드로이드 길찾기 시연 영상](https://youtu.be/Q2opK60kJUw)  
+1. [안드로이드 길찾기 시연 영상](https://youtu.be/UP_2vaap_KM)  
 2. [유니티 길찾기 시연 영상](https://youtu.be/8bZurKdrscc)  
+
+
+https://user-images.githubusercontent.com/80199125/186281908-d990adbd-3dba-49c1-97b0-48d1337ad01f.mp4
+
 
 
 
