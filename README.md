@@ -23,8 +23,6 @@
 2. [유니티 길찾기 시연 영상](https://youtu.be/8bZurKdrscc)  
 
 
-https://user-images.githubusercontent.com/80199125/186281908-d990adbd-3dba-49c1-97b0-48d1337ad01f.mp4
-
 
 
 
