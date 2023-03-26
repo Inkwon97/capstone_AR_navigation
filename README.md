@@ -1,5 +1,7 @@
 ### AR Navigation  
 ### AR을 이용한 길찾기  
+#### unity는 package로 구성이 되어있기 때문에 소스를 github에 올리지 못했습니다
+<br>
 [발표 ppt 확인하기_시연 영상은 아래](https://github.com/BackDev19/capstone/blob/main/document/%EC%BA%A1%EC%8A%A4%ED%86%A4%EB%94%94%EC%9E%90%EC%9D%B8_%EC%B5%9C%EC%A2%85.pdf)  
 
 #### 발표 영상  
